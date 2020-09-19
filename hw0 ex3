@@ -1,0 +1,18 @@
+public class Main {
+
+
+    public static int max(int[] m) {
+       int maxElement =  m[0]; //set up one element which at 1st place of index
+       for (int x=1; x<m.length; x++){  // set up 2second element of index; increase 1 unit each time
+           if(m[x]>maxElement)   //compare 2 element
+                maxElement = m[x]; // save the bigger element
+       }
+       return maxElement;
+    }
+    public static void main(String[] args) {
+        int[] numbers = new int[]{9, 2, 15, 2, 22, 10, 6};
+
+        System.out.println("The max number of the list is " + max(numbers));   //call max() function and print
+    }
+
+    }
